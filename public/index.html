@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>题海网</title>
+    <script>
+      (function (pw) {
+        var d = document;
+        var a = ((d.documentElement && d.documentElement.clientWidth) || (screen && screen.width)) / pw;
+        var vp = document.querySelectorAll("meta[name='viewport']")[0];
+        if (!vp) {
+            vp = d.createElement('meta');
+            d.head.appendChild(vp);
+        }
+        vp.setAttribute('name', 'viewport');
+        vp.setAttribute('content', 'width=device-width,initial-scale=' + a + ',minimum-scale=' + a + ',maximum-scale=' + a + ',user-scalable=no');
+      })(750);
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
